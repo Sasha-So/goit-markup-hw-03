@@ -41,20 +41,14 @@ img {
     letter-spacing: 0.03em;
 }
 
-body {
-    width: 1600px;
-}
-
 /* Header */
 .page-header {
     background-color: var(--main-white-color);
     border-bottom: 1px solid var(--border-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .head-container {
     display: flex;
-    align-items: baseline;
 }
 
 a {
@@ -89,13 +83,8 @@ a {
 }
 
 .site-nav.list {
-    width: 281px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-left: 94px;
-    margin-right: 344px;
 }
 
 .site-nav .link {
@@ -104,7 +93,15 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: block;
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+/* 
+.site-nav .link:last-child {
+    margin-right: 0;
+} */
 
 .site-nav .link.current {
     color: var(--accent-color);
@@ -121,6 +118,9 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact .link:hover,
@@ -130,14 +130,10 @@ a {
 
 .contact.list.link {
     display: flex;
-    align-items: baseline;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin-left: auto;
 }
 
 .mail {
-    display: block;
     margin-right: 50px;
 }
 
@@ -149,7 +145,6 @@ a {
     padding-bottom: 200px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -202,7 +197,12 @@ a {
 
 /* Project */
 .section {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-project {
+    padding-top: 0;
 }
 
 .section-title.project {
@@ -216,6 +216,8 @@ a {
 
 /* Team */
 .section-team {
+    width: 1600px;
+    margin: 0 auto;
     background-color: var(--team-color);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -242,25 +244,26 @@ a {
 }
 
 .item {
+    width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.item-img {
-    padding-bottom: 30px;
-}
-
 .team-item {
     padding-bottom: 10px;
+}
+
+.item-caption{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .prof {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 30px;
 }
 
 /* Footer */
@@ -269,6 +272,7 @@ a {
     width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
 }
 
 .page-footer .logo {
@@ -370,8 +374,8 @@ a {
 
 /* Special for portfolio.html */
 .main {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .card-row {
@@ -382,7 +386,6 @@ a {
 
 .card {
     width: 370px;
-    border: 1px solid var(--card-border);
 }
 
 .example {
@@ -400,10 +403,11 @@ a {
 }
 
 .caption {
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border-right: 1px solid var(--card-border);
+    border-left: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
 }
-
-
 
 
 
