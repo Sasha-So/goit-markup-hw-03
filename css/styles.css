@@ -8,7 +8,7 @@
     --team-color: #F5F4FA;
     --footer-font-color: rgba(255, 255, 255, 0.6);
     --primary-button-color: #188CE8;
-    --border-color: #000000;
+    --border-color: #ECECEC;
     --card-border:#EEEEEE;
 }
 
@@ -174,7 +174,6 @@ a {
 }
 .list.feature {
     display: flex;
-    margin-bottom: 94px;
     gap: 30px;
 }
 
@@ -216,7 +215,6 @@ a {
 
 /* Team */
 .section-team {
-    width: 1600px;
     margin: 0 auto;
     background-color: var(--team-color);
     padding-top: 94px;
@@ -269,7 +267,6 @@ a {
 /* Footer */
 .page-footer {
     background-color: var(--block-color);
-    width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
@@ -290,22 +287,32 @@ a {
 }
 
 .page-footer .contact {
-    color: var(--main-white-color);
     font-size: 14px;
     line-height: 1.71;
 }
 
+.white {
+    color: var(--main-white-color);
+}
+
 .contact:hover,
 .contact:focus {
+    color: var(--accent-color);
+}
+
+.grey {
     color: var(--footer-font-color);
 }
 
 .contact {
     font-style: normal;
+}
+
+.page-footer li {
     margin-bottom: 9px;
 }
 
-.contact:last-child {
+.page-footer li:last-child {
     margin-bottom: 0;
 }
 
@@ -316,11 +323,11 @@ a {
     cursor: pointer;
     font-family: inherit;
 }
-.main .button-list {
+.section .button-list {
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .button.primary {
@@ -408,6 +415,10 @@ a {
     border-left: 1px solid var(--card-border);
     border-bottom: 1px solid var(--card-border);
 }
+
+
+
+
 
 
 
